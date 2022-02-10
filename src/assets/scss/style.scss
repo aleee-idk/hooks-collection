@@ -1,0 +1,18 @@
+@import "./themes/tokyionight.scss";
+
+// Sidebar
+$sidebar-width: 25vw;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+  color: $foreground;
+}
+
+#main {
+  position: relative;
+  margin-left: $sidebar-width;
+}

@@ -1,0 +1,63 @@
+@import "src/assets/scss/style.scss";
+
+.sidebar {
+  height: 100vh;
+  width: $sidebar-width;
+  padding: 0 1rem;
+
+  background-color: $alt-black;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: $foreground;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0.25rem 0 0;
+  padding: 0;
+}
+
+li > ul {
+  margin-left: 1.5rem !important;
+  list-style-type: circle !important;
+}
+
+.dropdown {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dropdown_menu {
+  transition: max-height 0.25s linear;
+  max-height: 0;
+}
+
+.dropdown.open .dropdown_menu {
+  max-height: 100vh;
+}
+
+.dropdown::before {
+  margin-left: 2px;
+  content: " ";
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: 0.7rem;
+  transform: translateY(-2px);
+
+  transition: transform 0.2s ease-out;
+}
+
+.dropdown.open::before {
+  transform: rotate(90deg) translateX(-3px);
+}
