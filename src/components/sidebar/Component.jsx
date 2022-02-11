@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./theme.scss";
+import "./Theme.scss";
 
 const Sidebar = () => {
   useEffect(() => {
