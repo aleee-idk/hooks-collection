@@ -16,3 +16,32 @@ body {
   position: relative;
   margin-left: $sidebar-width;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $blue;
+}
+
+a {
+  text-decoration: none;
+  color: $magenta;
+}
+
+a:hover {
+  color: $red;
+}
+
+/*------------------------------------------------------------------*/
+/*                        Utilities Classes                         */
+/*------------------------------------------------------------------*/
+
+.hstack {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

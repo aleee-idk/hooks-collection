@@ -32,7 +32,12 @@ const Sidebar = () => {
         <li className="dropdown">
           Fetch Stuff
           <ul className="dropdown_menu">
-            <li>GET - POST - PUT - DELETE</li>
+            <li>
+              <a href="#get-request">GET</a>
+            </li>
+            <li>POST</li>
+            <li>PUT</li>
+            <li>DELETE</li>
             <li>Map Array from GET request</li>
           </ul>
         </li>
